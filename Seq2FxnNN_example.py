@@ -355,8 +355,8 @@ plt.scatter(X, Y, color='red', s = 0.05)
 plt.ylabel("Predicted")
 plt.xlabel("Actual")
 
-plt.annotate(f"MSE = {metrics.mean_squared_error(X, Y):.3f}", (-5.0, -2.4))
-plt.annotate(f"R^2 = {metrics.r2_score(X, Y):.3f}", (-5.0, -2.5))
+plt.annotate(f"MSE = {metrics.mean_squared_error(X, Y):.3f}", (-5.0, 0.0))
+plt.annotate(f"R^2 = {metrics.r2_score(X, Y):.3f}", (-5.0, -1.0))
 print('Test performance:')
 print(f"MSE = {metrics.mean_squared_error(X, Y):.3f}")
 print(f"R^2 = {metrics.r2_score(X, Y):.3f}")
@@ -380,8 +380,8 @@ plt.scatter(X2, Y2, color='blue', s = 0.05)
 plt.ylabel("Predicted")
 plt.xlabel("Actual")
 
-plt.annotate(f"MSE = {metrics.mean_squared_error(X2, Y2):.3f}", (-5.0, -2.4))
-plt.annotate(f"R^2 = {metrics.r2_score(X2, Y2):.3f}", (-5.0, -2.5))
+plt.annotate(f"MSE = {metrics.mean_squared_error(X2, Y2):.3f}", (-5.0, 0.0))
+plt.annotate(f"R^2 = {metrics.r2_score(X2, Y2):.3f}", (-5.0, -1.))
 print('Training performance:')
 print(f"MSE = {metrics.mean_squared_error(X2, Y2):.3f}")
 print(f"R^2 = {metrics.r2_score(X2, Y2):.3f}")
@@ -390,4 +390,3 @@ plt.show()
 
 # Note that the test statistics are most important, but if the model performs
 # much better on the training data this can be another sign of overfitting
-
